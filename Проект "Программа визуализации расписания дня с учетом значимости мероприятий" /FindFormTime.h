@@ -11,7 +11,7 @@ namespace GraphRasp {
 
 	public ref class FindFormTime : public System::Windows::Forms::Form
 	{
-	public:
+	public: 
 		FindFormTime(void)
 		{
 			InitializeComponent();
@@ -55,13 +55,13 @@ namespace GraphRasp {
 			  this->groupBox1->Size = System::Drawing::Size(151, 59);
 			  this->groupBox1->TabIndex = 1;
 			  this->groupBox1->TabStop = false;
-			  this->groupBox1->Text = L"Введите номер";
+			  this->groupBox1->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
 
 			  this->button1->Location = System::Drawing::Point(54, 77);
 			  this->button1->Name = L"button1";
 			  this->button1->Size = System::Drawing::Size(124, 37);
 			  this->button1->TabIndex = 2;
-			  this->button1->Text = L"Найти";
+			  this->button1->Text = L"пїЅпїЅпїЅпїЅпїЅ";
 			  this->button1->UseVisualStyleBackColor = true;
 			  this->button1->Click += gcnew System::EventHandler(this, &FindFormTime::button1_Click);
 
@@ -75,7 +75,7 @@ namespace GraphRasp {
 			  this->MinimumSize = System::Drawing::Size(261, 187);
 			  this->Name = L"FindFormTime";
 			  this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			  this->Text = L"Поиск";
+			  this->Text = L"пїЅпїЅпїЅпїЅпїЅ";
 			  this->groupBox1->ResumeLayout(false);
 			  this->groupBox1->PerformLayout();
 			  this->ResumeLayout(false);

@@ -1,7 +1,7 @@
 #pragma once
 
 namespace GraphRasp {
-
+ 
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -33,8 +33,8 @@ namespace GraphRasp {
 	protected:
 
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^ вернутьсяВГлавноеМенюToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ чтоЭтоToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem;
 	public: static System::Windows::Forms::DataGridViewTextBoxColumn^ Number;
 	public:static System::Windows::Forms::DataGridViewTextBoxColumn^ Sotr;
 	public:static System::Windows::Forms::DataGridViewTextBoxColumn^ NameMero;
@@ -64,8 +64,8 @@ namespace GraphRasp {
 			this->Prioritet = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Sogl = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->вернутьсяВГлавноеМенюToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->чтоЭтоToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -89,55 +89,55 @@ namespace GraphRasp {
 			this->Number->Name = L"Number";
 			this->Number->Width = 125;
 
-			this->Sotr->HeaderText = L"Сотрудник";
+			this->Sotr->HeaderText = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->Sotr->MinimumWidth = 6;
 			this->Sotr->Name = L"Sotr";
 			this->Sotr->Width = 125;
 
-			this->NameMero->HeaderText = L"Название";
+			this->NameMero->HeaderText = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->NameMero->MinimumWidth = 6;
 			this->NameMero->Name = L"NameMero";
 			this->NameMero->Width = 125;
 
-			this->NameOpis->HeaderText = L"Описание";
+			this->NameOpis->HeaderText = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->NameOpis->MinimumWidth = 6;
 			this->NameOpis->Name = L"NameOpis";
 			this->NameOpis->Width = 125;
 
-			this->doStart->HeaderText = L"Начало трансфера до мероприятия";
+			this->doStart->HeaderText = L"пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->doStart->MinimumWidth = 6;
 			this->doStart->Name = L"doStart";
 			this->doStart->Width = 125;
 
-			this->Start->HeaderText = L"Время начала";
+			this->Start->HeaderText = L"пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->Start->MinimumWidth = 6;
 			this->Start->Name = L"Start";
 			this->Start->Width = 125;
 
-			this->Final->HeaderText = L"Время окончания";
+			this->Final->HeaderText = L"пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->Final->MinimumWidth = 6;
 			this->Final->Name = L"Final";
 			this->Final->Width = 125;
 
-			this->poFinal->HeaderText = L"Окончание трансфера после мероприятия";
+			this->poFinal->HeaderText = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->poFinal->MinimumWidth = 6;
 			this->poFinal->Name = L"poFinal";
 			this->poFinal->Width = 125;
 
-			this->Prioritet->HeaderText = L"Приоритет";
+			this->Prioritet->HeaderText = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->Prioritet->MinimumWidth = 6;
 			this->Prioritet->Name = L"Prioritet";
 			this->Prioritet->Width = 125;
 
-			this->Sogl->HeaderText = L"Решение";
+			this->Sogl->HeaderText = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->Sogl->MinimumWidth = 6;
 			this->Sogl->Name = L"Sogl";
 			this->Sogl->Width = 125;
 
 			this->menuStrip1->ImageScalingSize = System::Drawing::Size(20, 20);
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->вернутьсяВГлавноеМенюToolStripMenuItem,
-					this->чтоЭтоToolStripMenuItem
+				this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem,
+					this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -145,15 +145,15 @@ namespace GraphRasp {
 			this->menuStrip1->TabIndex = 10;
 			this->menuStrip1->Text = L"menuStrip1";
 
-			this->вернутьсяВГлавноеМенюToolStripMenuItem->Name = L"вернутьсяВГлавноеМенюToolStripMenuItem";
-			this->вернутьсяВГлавноеМенюToolStripMenuItem->Size = System::Drawing::Size(210, 24);
-			this->вернутьсяВГлавноеМенюToolStripMenuItem->Text = L"Вернуться в главное меню";
-			this->вернутьсяВГлавноеМенюToolStripMenuItem->Click += gcnew System::EventHandler(this, &DataForm::вернутьсяВГлавноеМенюToolStripMenuItem_Click);
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Name = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem";
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Size = System::Drawing::Size(210, 24);
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Click += gcnew System::EventHandler(this, &DataForm::пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click);
 
-			this->чтоЭтоToolStripMenuItem->Name = L"чтоЭтоToolStripMenuItem";
-			this->чтоЭтоToolStripMenuItem->Size = System::Drawing::Size(81, 24);
-			this->чтоЭтоToolStripMenuItem->Text = L"Что это\?";
-			this->чтоЭтоToolStripMenuItem->Click += gcnew System::EventHandler(this, &DataForm::чтоЭтоToolStripMenuItem_Click);
+			this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Name = L"пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem";
+			this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Size = System::Drawing::Size(81, 24);
+			this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Text = L"пїЅпїЅпїЅ пїЅпїЅпїЅ\?";
+			this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Click += gcnew System::EventHandler(this, &DataForm::пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click);
 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -165,7 +165,7 @@ namespace GraphRasp {
 			this->MinimumSize = System::Drawing::Size(1385, 708);
 			this->Name = L"DataForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"Список мероприятий";
+			this->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
@@ -176,9 +176,9 @@ namespace GraphRasp {
 #pragma endregion
 	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 	}
-private: System::Void вернутьсяВГлавноеМенюToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
-private: System::Void чтоЭтоToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	MessageBox::Show("При выборе Кнопки \"8. Показать выбранное мероприятие из списка.\":\nВыводит список мероприятий полностью.\n\nПри выборе Кнопки \"9. Показать все мероприятий в списке.\":\nПозволяет отобразить мероприятие по номеру, указанному пользователем.", "Информация");
+private: System::Void пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	MessageBox::Show("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ \"8. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.\":\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.\n\nпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ \"9. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.\":\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 }
 };
 }

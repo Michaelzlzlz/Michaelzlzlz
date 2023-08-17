@@ -11,7 +11,7 @@ namespace GraphRasp {
 
 	public ref class FindFormData : public System::Windows::Forms::Form
 	{
-	public:
+	public: 
 		FindFormData(void)
 		{
 			InitializeComponent();
@@ -50,13 +50,13 @@ namespace GraphRasp {
 			  this->groupBox1->Size = System::Drawing::Size(188, 59);
 			  this->groupBox1->TabIndex = 1;
 			  this->groupBox1->TabStop = false;
-			  this->groupBox1->Text = L"Введите дату";
+			  this->groupBox1->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
 
 			  this->button1->Location = System::Drawing::Point(54, 77);
 			  this->button1->Name = L"button1";
 			  this->button1->Size = System::Drawing::Size(124, 37);
 			  this->button1->TabIndex = 2;
-			  this->button1->Text = L"Найти";
+			  this->button1->Text = L"пїЅпїЅпїЅпїЅпїЅ";
 			  this->button1->UseVisualStyleBackColor = true;
 			  this->button1->Click += gcnew System::EventHandler(this, &FindFormData::button1_Click);
  
@@ -81,7 +81,7 @@ namespace GraphRasp {
 			  this->MinimumSize = System::Drawing::Size(261, 187);
 			  this->Name = L"FindFormData";
 			  this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			  this->Text = L"Визуализация расписания дня";
+			  this->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ";
 			  this->groupBox1->ResumeLayout(false);
 			  this->ResumeLayout(false);
 
@@ -91,7 +91,7 @@ namespace GraphRasp {
 
 	}
 	private: System::Void textBox1_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
-		if ((e->KeyChar >= '0') && (e->KeyChar <= '9') || (e->KeyChar == 0x08)) //если вводятся цифры от 0 до 9 то все ок
+		if ((e->KeyChar >= '0') && (e->KeyChar <= '9') || (e->KeyChar == 0x08)) //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 0 пїЅпїЅ 9 пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ
 			return;
 		e->Handled = true;
 	}

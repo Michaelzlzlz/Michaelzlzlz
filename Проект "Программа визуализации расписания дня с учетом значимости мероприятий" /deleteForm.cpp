@@ -2,12 +2,12 @@
 #include "MyForm.h"
 #include "Function.h"
 #include "string"
-#include "graficFootball.h"
+#include "graficFootball.h" 
 
 using namespace System;
 using namespace System::Windows::Forms;
 
-System::Void GraphRasp::deleteForm::вернутьсяВГлавноеМенюToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void GraphRasp::deleteForm::пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	MyForm^ form = gcnew MyForm();
 	this->Hide();
@@ -23,7 +23,7 @@ System::Void GraphRasp::deleteForm::button_add1_Click(System::Object^ sender, Sy
 	}
 	else
 	{
-		MessageBox::Show("Ячейка пустая!", "Внимание!");
+		MessageBox::Show("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ!", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
 	}
 }
 

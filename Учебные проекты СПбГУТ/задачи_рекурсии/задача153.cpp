@@ -21,7 +21,7 @@ int key_recursion_153(int num_input)
         }
 
         if (resultat == 153) //проверка 153
-        {
+        { 
             cout << resultat << endl;//вывод результата
             return 0;
         }

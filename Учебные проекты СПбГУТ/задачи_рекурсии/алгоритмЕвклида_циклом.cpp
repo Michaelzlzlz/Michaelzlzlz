@@ -18,7 +18,7 @@ int main() {
     while (N != M) {
         if (N > M) {
             N = N - M;
-        }
+        } 
         else {
             M = M - N;
         }

@@ -6,8 +6,8 @@
 
 using namespace System;
 using namespace System::Windows::Forms;
-
-System::Void GraphRasp::EditForm11::вернутьсяВГлавноеМенюToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+ 
+System::Void GraphRasp::EditForm11::пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	MyForm^ form = gcnew MyForm();
 	this->Hide();
@@ -25,7 +25,7 @@ System::Void GraphRasp::EditForm11::button_add1_Click(System::Object^ sender, Sy
 	}
 	else
 	{
-		MessageBox::Show("Ячейки пустые!", "Внимание!");
+		MessageBox::Show("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ!", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
 	}
 }
 

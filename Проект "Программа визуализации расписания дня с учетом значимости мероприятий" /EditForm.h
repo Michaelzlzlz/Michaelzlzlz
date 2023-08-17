@@ -7,7 +7,7 @@ namespace GraphRasp {
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
 	using namespace System::Drawing;
-
+ 
 	public ref class EditForm : public System::Windows::Forms::Form
 	{
 	public:
@@ -38,8 +38,8 @@ namespace GraphRasp {
 
 	private: System::Windows::Forms::ContextMenuStrip^ contextMenuStrip2;
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^ вернутьсяВГлавноеМенюToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ чтоЭтоToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem;
 	private: System::Windows::Forms::GroupBox^ groupBox10;
 	public: static  System::Windows::Forms::TextBox^ TextNumb_1_1;
 	private:
@@ -91,8 +91,8 @@ namespace GraphRasp {
 			this->TextPriorit_1_9 = (gcnew System::Windows::Forms::TextBox());
 			this->contextMenuStrip2 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->вернутьсяВГлавноеМенюToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->чтоЭтоToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
@@ -113,7 +113,7 @@ namespace GraphRasp {
 			this->button_add1->Name = L"button_add1";
 			this->button_add1->Size = System::Drawing::Size(114, 43);
 			this->button_add1->TabIndex = 0;
-			this->button_add1->Text = L"Изменить";
+			this->button_add1->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button_add1->UseVisualStyleBackColor = true;
 			this->button_add1->Click += gcnew System::EventHandler(this, &EditForm::button_add1_Click);
 
@@ -131,7 +131,7 @@ namespace GraphRasp {
 			this->groupBox1->Size = System::Drawing::Size(187, 55);
 			this->groupBox1->TabIndex = 2;
 			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Номер";
+			this->groupBox1->Text = L"пїЅпїЅпїЅпїЅпїЅ";
 			this->groupBox1->Enter += gcnew System::EventHandler(this, &EditForm::groupBox1_Enter);
 
 			this->groupBox2->Controls->Add(this->TextOpis_1_4);
@@ -141,7 +141,7 @@ namespace GraphRasp {
 			this->groupBox2->Size = System::Drawing::Size(399, 124);
 			this->groupBox2->TabIndex = 3;
 			this->groupBox2->TabStop = false;
-			this->groupBox2->Text = L"Название и описание";
+			this->groupBox2->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
 			this->TextOpis_1_4->Location = System::Drawing::Point(6, 49);
 			this->TextOpis_1_4->MaxLength = 99;
@@ -168,7 +168,7 @@ namespace GraphRasp {
 			this->groupBox3->Size = System::Drawing::Size(136, 54);
 			this->groupBox3->TabIndex = 3;
 			this->groupBox3->TabStop = false;
-			this->groupBox3->Text = L"Согласие(0-3)";
+			this->groupBox3->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ(0-3)";
 
 			this->TextSogl_1_10->Location = System::Drawing::Point(6, 21);
 			this->TextSogl_1_10->MaxLength = 1;
@@ -184,7 +184,7 @@ namespace GraphRasp {
 			this->groupBox4->Size = System::Drawing::Size(187, 57);
 			this->groupBox4->TabIndex = 4;
 			this->groupBox4->TabStop = false;
-			this->groupBox4->Text = L"Время начала меро";
+			this->groupBox4->Text = L"пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
 
 			this->TextStart_1_5->CustomFormat = L"dd.MM.yyyy HH:mm";
 			this->TextStart_1_5->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
@@ -203,7 +203,7 @@ namespace GraphRasp {
 			this->groupBox5->Size = System::Drawing::Size(206, 57);
 			this->groupBox5->TabIndex = 5;
 			this->groupBox5->TabStop = false;
-			this->groupBox5->Text = L"Начало трансфера до";
+			this->groupBox5->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ";
 
 			this->TextdoStart_1_6->CustomFormat = L"dd.MM.yyyy HH:mm";
 			this->TextdoStart_1_6->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
@@ -221,7 +221,7 @@ namespace GraphRasp {
 			this->groupBox6->Size = System::Drawing::Size(187, 54);
 			this->groupBox6->TabIndex = 6;
 			this->groupBox6->TabStop = false;
-			this->groupBox6->Text = L"Время окончания меро";
+			this->groupBox6->Text = L"пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
 
 			this->TextFinish_1_7->CustomFormat = L"dd.MM.yyyy HH:mm";
 			this->TextFinish_1_7->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
@@ -239,7 +239,7 @@ namespace GraphRasp {
 			this->groupBox7->Size = System::Drawing::Size(206, 54);
 			this->groupBox7->TabIndex = 6;
 			this->groupBox7->TabStop = false;
-			this->groupBox7->Text = L"Конец трансфера после";
+			this->groupBox7->Text = L"пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
 
 			this->TextpoFinish_1_8->CustomFormat = L"dd.MM.yyyy HH:mm";
 			this->TextpoFinish_1_8->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
@@ -268,7 +268,7 @@ namespace GraphRasp {
 			this->groupBox8->Size = System::Drawing::Size(425, 474);
 			this->groupBox8->TabIndex = 7;
 			this->groupBox8->TabStop = false;
-			this->groupBox8->Text = L"Редактировать мероприятие";
+			this->groupBox8->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
 			this->groupBox10->Controls->Add(this->TextSotr_1_2);
 			this->groupBox10->Location = System::Drawing::Point(208, 30);
@@ -276,7 +276,7 @@ namespace GraphRasp {
 			this->groupBox10->Size = System::Drawing::Size(206, 55);
 			this->groupBox10->TabIndex = 3;
 			this->groupBox10->TabStop = false;
-			this->groupBox10->Text = L"Имя сотрудника";
+			this->groupBox10->Text = L"пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
 			this->TextSotr_1_2->Location = System::Drawing::Point(6, 21);
 			this->TextSotr_1_2->MaxLength = 99;
@@ -291,7 +291,7 @@ namespace GraphRasp {
 			this->groupBox9->Size = System::Drawing::Size(132, 54);
 			this->groupBox9->TabIndex = 4;
 			this->groupBox9->TabStop = false;
-			this->groupBox9->Text = L"Приоритет(1-5)";
+			this->groupBox9->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ(1-5)";
 
 			this->TextPriorit_1_9->Location = System::Drawing::Point(6, 21);
 			this->TextPriorit_1_9->MaxLength = 1;
@@ -307,8 +307,8 @@ namespace GraphRasp {
 
 			this->menuStrip1->ImageScalingSize = System::Drawing::Size(20, 20);
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->вернутьсяВГлавноеМенюToolStripMenuItem,
-					this->чтоЭтоToolStripMenuItem
+				this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem,
+					this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -316,36 +316,36 @@ namespace GraphRasp {
 			this->menuStrip1->TabIndex = 9;
 			this->menuStrip1->Text = L"menuStrip1";
 
-			this->вернутьсяВГлавноеМенюToolStripMenuItem->Name = L"вернутьсяВГлавноеМенюToolStripMenuItem";
-			this->вернутьсяВГлавноеМенюToolStripMenuItem->Size = System::Drawing::Size(210, 24);
-			this->вернутьсяВГлавноеМенюToolStripMenuItem->Text = L"Вернуться в главное меню";
-			this->вернутьсяВГлавноеМенюToolStripMenuItem->Click += gcnew System::EventHandler(this, &EditForm::вернутьсяВГлавноеМенюToolStripMenuItem_Click);
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Name = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem";
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Size = System::Drawing::Size(210, 24);
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Click += gcnew System::EventHandler(this, &EditForm::пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click);
 
-			this->чтоЭтоToolStripMenuItem->Name = L"чтоЭтоToolStripMenuItem";
-			this->чтоЭтоToolStripMenuItem->Size = System::Drawing::Size(81, 24);
-			this->чтоЭтоToolStripMenuItem->Text = L"Что это\?";
-			this->чтоЭтоToolStripMenuItem->Click += gcnew System::EventHandler(this, &EditForm::чтоЭтоToolStripMenuItem_Click);
+			this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Name = L"пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem";
+			this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Size = System::Drawing::Size(81, 24);
+			this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Text = L"пїЅпїЅпїЅ пїЅпїЅпїЅ\?";
+			this->пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Click += gcnew System::EventHandler(this, &EditForm::пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click);
 
 			this->label3->AutoSize = true;
 			this->label3->Location = System::Drawing::Point(126, 453);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(236, 16);
 			this->label3->TabIndex = 13;
-			this->label3->Text = L"2 - На рассмотрении; 3 - Выполнено.";
+			this->label3->Text = L"2 - пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ; 3 - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.";
 
 			this->label2->AutoSize = true;
 			this->label2->Location = System::Drawing::Point(18, 439);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(278, 16);
 			this->label2->TabIndex = 12;
-			this->label2->Text = L"Номер решения: 0 - Отказано; 1 - Принято;";
+			this->label2->Text = L"пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 0 - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ; 1 - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ;";
 
 			this->label1->AutoSize = true;
 			this->label1->Location = System::Drawing::Point(18, 410);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(372, 16);
 			this->label1->TabIndex = 11;
-			this->label1->Text = L"Номер приоритета: от 1 до 5 баллов (5 - самый высокий).";
+			this->label1->Text = L"пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅ 1 пїЅпїЅ 5 пїЅпїЅпїЅпїЅпїЅпїЅ (5 - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ).";
 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -360,7 +360,7 @@ namespace GraphRasp {
 			this->MinimumSize = System::Drawing::Size(467, 628);
 			this->Name = L"EditForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"Редактировать мероприятие";
+			this->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->Load += gcnew System::EventHandler(this, &EditForm::EditForm_Load);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
@@ -385,7 +385,7 @@ namespace GraphRasp {
 
 		}
 #pragma endregion
-	private: System::Void вернутьсяВГлавноеМенюToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void EditForm_Load(System::Object^ sender, System::EventArgs^ e) {
@@ -432,8 +432,8 @@ namespace GraphRasp {
 			return;
 		e->Handled = true;
 	}
-	private: System::Void чтоЭтоToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		MessageBox::Show("Ищет по номеру мероприятия, введенному пользователем. В случае нахождения - меняет на новые данные о мероприятии введенные пользователем.", "Информация");
+	private: System::Void пїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		MessageBox::Show("пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 	}
 };
 }

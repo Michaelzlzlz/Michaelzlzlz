@@ -9,5 +9,5 @@ System::Void GraphRasp::FindFormData::button1_Click(System::Object^ sender, Syst
 {
 	this->Hide();
 	Spisok.Visual_grafic_list();
-}
+} 
 

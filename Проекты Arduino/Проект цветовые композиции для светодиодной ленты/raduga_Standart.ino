@@ -5,7 +5,7 @@
 CRGB leds[NUM_LEDS];
 byte col = 5;
 byte zad = 0;
-bool zn=true;
+bool zn=true; 
 void setup() {
   FastLED.addLeds<WS2812B, PIN, GRB>(leds, NUM_LEDS).setCorrection( TypicalLEDStrip );
   FastLED.setBrightness(255);

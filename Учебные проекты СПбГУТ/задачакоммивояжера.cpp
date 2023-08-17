@@ -5,7 +5,7 @@
 #define W(x,y)(x<y)
 #define inf 99999 //бесконечность для поиска минимума
 #define N 5	//кол-во точек
-#define B 0
+#define B 0 
 #define E 1
 using namespace std;
 

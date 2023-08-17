@@ -19,7 +19,7 @@ namespace GraphRasp {
 	protected:
 		~MyForm()
 		{
-			if (components)
+			if (components) 
 			{
 				delete components;
 			}
@@ -39,8 +39,8 @@ namespace GraphRasp {
 	private: System::Windows::Forms::Button^ button13;
 	private: System::Windows::Forms::Button^ button14;
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^ выходToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ обПрограммеToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ пїЅпїЅпїЅпїЅпїЅToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem;
 	protected:
 
 	private:
@@ -64,8 +64,8 @@ namespace GraphRasp {
 			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->button14 = (gcnew System::Windows::Forms::Button());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->выходToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->обПрограммеToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->пїЅпїЅпїЅпїЅпїЅToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 
@@ -77,7 +77,7 @@ namespace GraphRasp {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(251, 53);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"1. Создать первое мероприятие";
+			this->button1->Text = L"1. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 
@@ -90,7 +90,7 @@ namespace GraphRasp {
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(251, 53);
 			this->button2->TabIndex = 1;
-			this->button2->Text = L"2. Загрузить список мероприятий";
+			this->button2->Text = L"2. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 
@@ -102,7 +102,7 @@ namespace GraphRasp {
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(251, 53);
 			this->button3->TabIndex = 2;
-			this->button3->Text = L"3. Сохранить список мероприятий";
+			this->button3->Text = L"3. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button3->UseVisualStyleBackColor = false;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 
@@ -114,7 +114,7 @@ namespace GraphRasp {
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(251, 53);
 			this->button4->TabIndex = 3;
-			this->button4->Text = L"4. Сохранить список мероприятий как...";
+			this->button4->Text = L"4. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ...";
 			this->button4->UseVisualStyleBackColor = false;
 			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 
@@ -126,7 +126,7 @@ namespace GraphRasp {
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(251, 53);
 			this->button5->TabIndex = 4;
-			this->button5->Text = L"5. Добавить мероприятие в список";
+			this->button5->Text = L"5. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button5->UseVisualStyleBackColor = false;
 			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 
@@ -138,7 +138,7 @@ namespace GraphRasp {
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(251, 53);
 			this->button6->TabIndex = 5;
-			this->button6->Text = L"6. Редактировать мероприятие в списке";
+			this->button6->Text = L"6. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button6->UseVisualStyleBackColor = false;
 			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
  
@@ -151,7 +151,7 @@ namespace GraphRasp {
 			this->button7->Name = L"button7";
 			this->button7->Size = System::Drawing::Size(251, 53);
 			this->button7->TabIndex = 6;
-			this->button7->Text = L"7. Удалить выбранное мероприятие из списка";
+			this->button7->Text = L"7. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button7->UseVisualStyleBackColor = false;
 			this->button7->Click += gcnew System::EventHandler(this, &MyForm::button7_Click);
 
@@ -163,7 +163,7 @@ namespace GraphRasp {
 			this->button8->Name = L"button8";
 			this->button8->Size = System::Drawing::Size(251, 53);
 			this->button8->TabIndex = 7;
-			this->button8->Text = L"8. Показать выбранное мероприятие из списка";
+			this->button8->Text = L"8. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button8->UseVisualStyleBackColor = false;
 			this->button8->Click += gcnew System::EventHandler(this, &MyForm::button8_Click);
 
@@ -175,7 +175,7 @@ namespace GraphRasp {
 			this->button9->Name = L"button9";
 			this->button9->Size = System::Drawing::Size(251, 53);
 			this->button9->TabIndex = 8;
-			this->button9->Text = L"9. Показать все мероприятий в списке";
+			this->button9->Text = L"9. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button9->UseVisualStyleBackColor = false;
 			this->button9->Click += gcnew System::EventHandler(this, &MyForm::button9_Click);
 
@@ -188,7 +188,7 @@ namespace GraphRasp {
 			this->button10->Name = L"button10";
 			this->button10->Size = System::Drawing::Size(251, 53);
 			this->button10->TabIndex = 9;
-			this->button10->Text = L"10. Визуализация расписания дня";
+			this->button10->Text = L"10. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ";
 			this->button10->UseVisualStyleBackColor = false;
 			this->button10->Click += gcnew System::EventHandler(this, &MyForm::button10_Click);
 
@@ -201,7 +201,7 @@ namespace GraphRasp {
 			this->button11->Name = L"button11";
 			this->button11->Size = System::Drawing::Size(251, 53);
 			this->button11->TabIndex = 10;
-			this->button11->Text = L"11. Изменить решение";
+			this->button11->Text = L"11. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button11->UseVisualStyleBackColor = false;
 			this->button11->Click += gcnew System::EventHandler(this, &MyForm::button11_Click);
 
@@ -214,7 +214,7 @@ namespace GraphRasp {
 			this->button12->Name = L"button12";
 			this->button12->Size = System::Drawing::Size(251, 53);
 			this->button12->TabIndex = 11;
-			this->button12->Text = L"12. Изменить приоритет";
+			this->button12->Text = L"12. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button12->UseVisualStyleBackColor = false;
 			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
 
@@ -225,7 +225,7 @@ namespace GraphRasp {
 			this->button13->Name = L"button13";
 			this->button13->Size = System::Drawing::Size(251, 53);
 			this->button13->TabIndex = 12;
-			this->button13->Text = L"13. Изменить время мероприятия, в том числе время поездки";
+			this->button13->Text = L"13. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 			this->button13->UseVisualStyleBackColor = false;
 			this->button13->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
 
@@ -237,14 +237,14 @@ namespace GraphRasp {
 			this->button14->Name = L"button14";
 			this->button14->Size = System::Drawing::Size(251, 53);
 			this->button14->TabIndex = 13;
-			this->button14->Text = L"14. Перенести мероприятие на другое время";
+			this->button14->Text = L"14. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
 			this->button14->UseVisualStyleBackColor = false;
 			this->button14->Click += gcnew System::EventHandler(this, &MyForm::button14_Click);
 
 			this->menuStrip1->ImageScalingSize = System::Drawing::Size(20, 20);
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->выходToolStripMenuItem,
-					this->обПрограммеToolStripMenuItem
+				this->пїЅпїЅпїЅпїЅпїЅToolStripMenuItem,
+					this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -253,15 +253,15 @@ namespace GraphRasp {
 			this->menuStrip1->TabIndex = 14;
 			this->menuStrip1->Text = L"menuStrip1";
 
-			this->выходToolStripMenuItem->Name = L"выходToolStripMenuItem";
-			this->выходToolStripMenuItem->Size = System::Drawing::Size(67, 24);
-			this->выходToolStripMenuItem->Text = L"Выход";
-			this->выходToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::выходToolStripMenuItem_Click);
+			this->пїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Name = L"пїЅпїЅпїЅпїЅпїЅToolStripMenuItem";
+			this->пїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Size = System::Drawing::Size(67, 24);
+			this->пїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Text = L"пїЅпїЅпїЅпїЅпїЅ";
+			this->пїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::пїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click);
 
-			this->обПрограммеToolStripMenuItem->Name = L"обПрограммеToolStripMenuItem";
-			this->обПрограммеToolStripMenuItem->Size = System::Drawing::Size(127, 24);
-			this->обПрограммеToolStripMenuItem->Text = L"О программе";
-			this->обПрограммеToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::обПрограммеToolStripMenuItem_Click);
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Name = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem";
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Size = System::Drawing::Size(127, 24);
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Text = L"пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+			this->пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click);
 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -290,7 +290,7 @@ namespace GraphRasp {
 			this->MinimumSize = System::Drawing::Size(594, 550);
 			this->Name = L"MyForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"Главное меню";
+			this->Text = L"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
 			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &MyForm::MyForm_FormClosing);
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->menuStrip1->ResumeLayout(false);
@@ -299,8 +299,8 @@ namespace GraphRasp {
 			this->PerformLayout();
 		}
 #pragma endregion
-private: System::Void обПрограммеToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
-private: System::Void выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void пїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e);

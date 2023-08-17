@@ -7,10 +7,10 @@
 using namespace System;
 using namespace System::Windows::Forms;
 
-System::Void GraphRasp::InputForm::вернутьсяВГлавноеМенюToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void GraphRasp::InputForm::пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	MyForm^ form = gcnew MyForm();
-	this->Hide();
+	this->Hide(); 
 	form->Show();
 }
 
@@ -29,7 +29,7 @@ System::Void GraphRasp::InputForm::button_add1_Click(System::Object^ sender, Sys
 	}
 	else
 	{
-		MessageBox::Show("Ячейки пустые!", "Внимание!");
+		MessageBox::Show("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ!", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
 	}
 }
 

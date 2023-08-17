@@ -11,7 +11,7 @@
 #include "DataForm.h"
 #include "MyForm.h"
 #include "Function.h"
-#include <type_traits>
+#include <type_traits> 
 
 using namespace System;
 using namespace System::Windows::Forms;

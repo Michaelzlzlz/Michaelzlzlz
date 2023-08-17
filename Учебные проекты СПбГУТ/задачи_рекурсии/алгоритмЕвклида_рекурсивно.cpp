@@ -18,7 +18,7 @@ unsigned int Function_ob_delitel(unsigned int N, unsigned int M) {
         return Function_ob_delitel(N % M, M);
     }
 }
-
+ 
 int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);

@@ -24,7 +24,7 @@ unsigned long long int Recursion_2_1(unsigned long long int N_number) {
     }
 }
 
-int main() {
+int main() { 
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     unsigned long long int result;

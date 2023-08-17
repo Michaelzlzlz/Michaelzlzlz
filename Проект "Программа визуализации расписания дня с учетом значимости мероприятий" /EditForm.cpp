@@ -4,10 +4,10 @@
 #include "string"
 #include "graficFootball.h"
 
-using namespace System;
+using namespace System; 
 using namespace System::Windows::Forms;
 
-System::Void GraphRasp::EditForm::вернутьсяВГлавноеМенюToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void GraphRasp::EditForm::пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	MyForm^ form = gcnew MyForm();
 	this->Hide();
@@ -29,7 +29,7 @@ System::Void GraphRasp::EditForm::button_add1_Click(System::Object^ sender, Syst
 	}
 	else
 	{
-		MessageBox::Show("Ячейки пустые!", "Внимание!");
+		MessageBox::Show("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ!", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
 	}
 }
 

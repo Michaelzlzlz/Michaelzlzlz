@@ -9,7 +9,7 @@ std::string& Convert_String_to_string(String^ s, std::string& os) {
 		(const char*)(Marshal::StringToHGlobalAnsi(s)).ToPointer();
 	os = chars;
 	Marshal::FreeHGlobal(IntPtr((void*)chars));
-
+ 
 	return os;
 }
 

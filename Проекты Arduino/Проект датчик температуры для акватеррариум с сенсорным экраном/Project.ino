@@ -3,7 +3,7 @@
 #include <LiquidCrystal.h>
 
 #define ONE_WIRE_BUS 8                // Указываем пин подключения data-вывода датчика температуры
-#define term_power 7                  // Указываем пин подключения питания датчика температуры
+#define term_power 7                  // Указываем пин подключения питания датчика температуры 
 
 OneWire oneWire(ONE_WIRE_BUS);        // Сообщаем библиотеке об устройстве, работающем по протоколу 1-Wire
 DallasTemperature sensors(&oneWire);  // Связываем функции библиотеки DallasTemperature с нашим 1-Wire устройством (DS18B20)

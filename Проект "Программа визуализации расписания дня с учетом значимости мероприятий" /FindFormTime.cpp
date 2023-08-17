@@ -11,4 +11,4 @@ System::Void GraphRasp::FindFormTime::button1_Click(System::Object^ sender, Syst
 	Convert_String_to_string(GraphRasp::FindFormTime::textBox1->Text->ToString(), str);
 	Spisok.find_Data(str);
 	this->Hide();
-}
+} 

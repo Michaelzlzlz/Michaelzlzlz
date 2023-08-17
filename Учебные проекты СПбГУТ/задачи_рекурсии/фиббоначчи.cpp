@@ -22,7 +22,7 @@ int Fibonacci_N(int N)
 
 }
 
-int main() {
+int main() { 
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     int N;

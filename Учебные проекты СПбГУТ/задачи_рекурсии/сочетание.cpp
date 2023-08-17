@@ -23,5 +23,5 @@ int main() {
     if (N - M < 0) { cout << "Ошибка!" << endl; return 1; }
     else { N = SOCHI_N(N,M, N - M);
         cout << "Найдено! C=" << N;
-    }
+    } 
 }

@@ -16,19 +16,19 @@ using namespace System::Windows::Forms;
 char saveFile[101] = "MichaelZurikovData1234567890";
 char saveFile1[101] = "MichaelZurikovData1234567890";
 std::string std_saveFile;
-
+ 
 struct Data_
 {
-	int Number; /*Номер мероприятия*/
-	char Mero[101]; /*Название меро*/
-	char Sotr[101]; /*Название меро*/
-	int Prioritet; /*Приоритет*/
-	char Text[101]; /*Описание*/
-	tm Start{}; /*Время начало*/
-	tm Final{}; /*Время конца*/
-	tm doStart{}; /*Время до след меро*/
-	tm PoFinal{}; /*Время предыдущ.меро*/
-	int Sogl; /*Принятие участия в текущем меро*/
+	int Number; /*пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
+	char Mero[101]; /*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ*/
+	char Sotr[101]; /*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ*/
+	int Prioritet; /*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
+	char Text[101]; /*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
+	tm Start{}; /*пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ*/
+	tm Final{}; /*пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ*/
+	tm doStart{}; /*пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ*/
+	tm PoFinal{}; /*пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.пїЅпїЅпїЅпїЅ*/
+	int Sogl; /*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ*/
 	Data_* pred;
 	Data_* next;
 };
@@ -40,21 +40,21 @@ class List
 public:
 	List() :Begin(NULL), End(NULL) {};
 	~List();
-	void new_add_Data(); //1 Функция создания списка
-	void load_Data();//2 загрузить
-	void save_Data();//3 сохранить
-	void save_AS_Data();//4 сохранить как
-	void display_Data(); // 9 Функция отображения списка на экране
-	void add_Data(); //5 Функция добавления элементов в список
-	void edit_Data(); //6 редактировать
-	void delete_Data(); //7 удалить запись
-	void find_Data(std::string ind); //8 найти запись
-	void Delete_list();// удалить список перед выходом
-	void Visual_grafic_list();// 10 Визуализация списка в расписании
-	void EditSogl_Data(); // 11 смена решения
-	void EditPriorit_Data(); // 12 смена приоритета
-	void edit_Start1_Data(); // 13 Полностью сменить время меро
-	void edit_Start2_Data(); // 14 Переместить начало меро
+	void new_add_Data(); //1 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	void load_Data();//2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	void save_Data();//3 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	void save_AS_Data();//4 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+	void display_Data(); // 9 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	void add_Data(); //5 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	void edit_Data(); //6 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	void delete_Data(); //7 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	void find_Data(std::string ind); //8 пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	void Delete_list();// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	void Visual_grafic_list();// 10 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	void EditSogl_Data(); // 11 пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	void EditPriorit_Data(); // 12 пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	void edit_Start1_Data(); // 13 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	void edit_Start2_Data(); // 14 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 };
 
 extern List Spisok;
@@ -67,9 +67,9 @@ void main(array<String^>^ argv)
 	Application::Run(% form);
 }
 
-System::Void GraphRasp::MyForm::обПрограммеToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void GraphRasp::MyForm::пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 {
-	MessageBox::Show("Программа предназначена для наглядного представления расписания, распределения мероприятий по уровню приоритета и отображения распорядка дня в виде специального разработанного визуального образа представления данных. ","Информация");
+	MessageBox::Show("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. ","пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 }
 
 System::Void GraphRasp::MyForm::button1_Click(System::Object^ sender, System::EventArgs^ e)
@@ -242,7 +242,7 @@ System::Void GraphRasp::MyForm::MyForm_Load(System::Object^ sender, System::Even
 System::Void GraphRasp::MyForm::MyForm_FormClosing(System::Object^ sender, System::Windows::Forms::FormClosingEventArgs^ e)
 {
 	if (e->CloseReason != ::CloseReason::UserClosing) return;
-	if (MessageBox::Show("Вы точно хотите выйти?\n\nВсе несохраненные данные будут утеряны.", "Предупреждение",
+	if (MessageBox::Show("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ?\n\nпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 		MessageBoxButtons::YesNo,
 		MessageBoxIcon::Question) == ::DialogResult::Yes) {
 		Spisok.Delete_list();
@@ -250,6 +250,6 @@ System::Void GraphRasp::MyForm::MyForm_FormClosing(System::Object^ sender, Syste
 	} else e->Cancel = true;
 }
 
-System::Void GraphRasp::MyForm::выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+System::Void GraphRasp::MyForm::пїЅпїЅпїЅпїЅпїЅToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 { this->Close(); }
 
