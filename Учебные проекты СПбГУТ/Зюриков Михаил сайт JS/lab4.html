@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ЛР №4 Совместное использование разветвлений и циклических алгоритмов.</title>
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+		<script>
+			let RKey;
+			RKey = prompt('Введите cимвол', '');
+			let N4;
+			N4 = Number(12);
+			let Y;
+			Y=Math.sqrt(N4+8);
+			switch(RKey){
+				case 'f':
+				case 'F':
+				case 'а':
+				case 'А':{
+						document.write('<p> Выполнено через цикл FOR </p>');
+						for(let i=5; i <= N4; i++) {
+							Y=Y*(Math.pow(i, 2) + Math.cos(i));
+						}
+						document.write('<p> Результат: ' + Y + '</p>');
+						document.write('<a href="title.html"><h3>Назад</h3></a>');
+						break;
+					}
+
+				case 'w':
+				case 'W':
+				case 'ц':
+				case 'Ц':{
+						document.write('<p> Выполнено через цикл WHILE </p>');
+						let i;
+						i = Number(5);
+						while (i <= N4) {
+							Y=Y*(Math.pow(i, 2) + Math.cos(i));
+							i++;
+						}
+						document.write('<p> Результат: ' + Y + '</p>');
+						document.write('<a href="title.html"><h3>Назад</h3></a>');
+						break;
+					}
+
+				case 'в':
+				case 'В':
+				case 'D':
+				case 'd':{
+						document.write('<p> Выполнено через цикл DO - WHILE </p>');
+						let i;
+						i = Number(5);
+						do{ 
+							Y=Y*(Math.pow(i, 2) + Math.cos(i));
+							i++;
+						} while(i <= N4);
+						document.write('<p> Результат: ' + Y + '</p>');
+						document.write('<a href="title.html"><h3>Назад</h3></a>');
+						break;
+					}
+				
+				default:{
+						alert('Неверный символ!');
+						document.write('<p>Неверный символ!</p>');
+						document.write('<a href="title.html"><h3>Назад</h3></a>'); 
+						break;
+					}
+			}
+		</script>
+	</body>
+</html>

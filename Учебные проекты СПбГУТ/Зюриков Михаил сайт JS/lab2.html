@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ЛР №2 Изучение разветвлений.</title>
+        <meta charset="UTF-8">
+	</head>
+
+	<body>
+ 		<script>
+ 			var sm ='см';
+	 		var inc ='inch';
+ 			var isNumb = prompt('Введите число...', '');
+ 			var name_2 = prompt('Введите см или inch', '');
+	 		isNumb = Number(isNumb);
+ 			switch(name_2)
+ 			{
+       			case sm:
+					alert(isNumb + ' см = ' + ((isNumb)/2.54) + ' дюйм' );
+            		break;
+        		case inc: 
+            		alert(isNumb + ' дюйм = ' + ((isNumb)*2.54) + ' см' );
+            		break;
+        		default: alert('Введена неверная размерность');
+    		};
+    	</script>
+    	<script>
+    		var NumbRes = prompt('Введите ТРЕХЗНАЧНОЕ число...', '');
+    		var Resu;
+    		NumbRes = Number(NumbRes);
+    			if ((NumbRes%2) == 1) { Resu = (Math.floor((NumbRes)/100))*(Math.floor((NumbRes)/10)%10)*((NumbRes)%10); 
+    				alert('Число ' + (NumbRes) + ' нечетное, произведение цифр = ' + (Resu));
+    			} else {Resu = (Math.floor((NumbRes)/100))+(Math.floor((NumbRes)/10)%10)+((NumbRes)%10);
+    			 	alert('Число ' + (NumbRes) + ' четное, сумма цифр = ' + (Resu));
+    			}
+    		document.write('<a href="title.html"><h3>Назад</h3></a>');
+    	</script>
+	</body>
+</html>

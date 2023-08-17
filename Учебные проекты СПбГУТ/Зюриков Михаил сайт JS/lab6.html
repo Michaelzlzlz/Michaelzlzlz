@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ЛР №6 Работа с одномерными массивами.</title>
+		<meta charset="UTF-8">
+	</head>
+	
+	<body>
+		<script>
+			var K = prompt('Введите число K от 6 до 15', '');
+			K = Number(K);
+			document.write('<h3 align="center">Количество ячеек в массиве: '+(K)+ '</h3>'); 
+			document.write('<h3 align="center">Заполняем рандомными значения от -100 до 100</h3>'); 
+
+			/*размер зависит от K - значит массив динамический*/
+			var arr = new Array(K);
+			for (var i = 0; i < K; i++ ) {
+				arr[i] = Math.round( (Math.random()-0.5) * 201 );
+			}
+
+			document.write('<table border = 2px cellpadding = 2px cellspacing =0px align="center"><tr align="center"><td>K</td>');
+			for (var i = 0; i < K; i++ ) {
+				document.write( '<td>' +(i+1)+ '</td>');
+			}
+			document.write('</tr>');
+
+			document.write('<tr align="center"><td>arr</td>');
+			for (var i = 0; i < K; i++ ) {
+				document.write( '<td>' +arr[i]+ '</td>');
+			}
+			document.write('</tr>');
+			document.write('</table>');
+
+			var min=200;
+			var max=-200;
+			min = Number(min);
+			max = Number(max);
+			for (var i = 0; i < K; i++ ) {
+				if (arr[i]<min){min = arr[i];}
+			}
+
+			for (var i = 0; i < K; i++ ) {
+				if (arr[i]>max){max = arr[i];}
+			}
+
+			for (var i = 0; i < K; i++ ) {
+				if ((Math.abs(arr[i]%2))==1){arr[i]=max;} else {arr[i]=min;}
+			}
+
+			document.write( '<p align="center"> Минимум:' +min+ '</p>');
+			document.write( '<p align="center"> Максимум:' +max+ '</p>');
+
+			document.write('<h3 align="center">Результат:</h3>'); 
+			document.write('<table border = 2px cellpadding = 2px cellspacing =0px align="center"><tr align="center"><td>K</td>');
+			for (var i = 0; i < K; i++ ) {
+				document.write( '<td>' +(i+1)+ '</td>');
+			}
+			document.write('</tr>');
+
+			document.write('<tr align="center"><td>arr</td>');
+			for (var i = 0; i < K; i++ ) {
+				document.write( '<td>' +arr[i]+ '</td>');
+			}
+			document.write('</tr>');
+			document.write('</table>');
+			document.write('<a href="title.html"><h3 align="center">Назад</h3></a>');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ЛР №8 Пользовательские функции в JS.</title>
+		<meta charset="UTF-8">
+	</head>
+	
+	<body>
+		<script>
+			function form_obr_vyvod2(Kf){
+				var arr = new Array(Kf);
+				document.write('<h3 align="center">Заполняем рандомом: arr2[-30;0]</h3>'); 
+				for (var i = 0; i < Kf; i++ ) {
+					arr[i] = Math.round( -(Math.random()) * 31);
+				}
+
+				document.write('<table border = 2px cellpadding = 2px cellspacing=0px align="center"><tr align="center"><td>K</td>');
+				for (var i = 0; i < Kf; i++ ) {
+					document.write( '<td>' +(i+1)+ '</td>');
+				}
+				document.write('</tr>');
+				document.write('<tr align="center"><td>arr2</td>');
+				for (var i = 0; i < Kf; i++ ) {
+					document.write( '<td>' +arr[i]+ '</td>');
+				}
+				document.write('</tr>');
+				document.write('</table>');
+				var counter = 0;
+				var summ = 0;
+				for (var i = 0; i < Kf; i++ ) {
+					if ((arr[i]>=-5)&&(arr[i]<=5)){counter++; summ+=arr[i];}
+				}
+				arr[0] = summ;
+				arr[Kf-1] = counter;
+				document.write('<p align="center">количество:'+counter+' сумма:'+summ+'</p>'); 
+				document.write('<h3 align="center">Результат 2-ого массива:</h3>'); 
+				document.write('<table border = 2px cellpadding = 2px cellspacing=0px align="center"><tr align="center"><td>K</td>');
+				for (var i = 0; i < Kf; i++ ) {
+					document.write( '<td>' +(i+1)+ '</td>');
+				}
+				document.write('</tr>');
+				document.write('<tr align="center"><td>arr2</td>');
+				for (var i = 0; i < Kf; i++ ) {
+					document.write( '<td>' +arr[i]+ '</td>');
+				}
+				document.write('</tr>');
+				document.write('</table>');
+			}
+
+			function form_obr_vyvod1(Kf){
+				var arr = new Array(Kf);
+				document.write('<h3 align="center">Заполняем рандомом: arr1[-10;10]</h3>'); 
+				for (var i = 0; i < Kf; i++ ) {
+					arr[i] = Math.round( (Math.random()-0.5) * 21 );
+				}
+				document.write('<table border = 2px cellpadding = 2px cellspacing=0px align="center"><tr align="center"><td>K</td>');
+				for (var i = 0; i < Kf; i++ ) {
+					document.write( '<td>' +(i+1)+ '</td>');
+				}
+				document.write('</tr>');
+				document.write('<tr align="center"><td>arr1</td>');
+				for (var i = 0; i < Kf; i++ ) {
+					document.write( '<td>' +arr[i]+ '</td>');
+				}
+				document.write('</tr>');
+				document.write('</table>');
+				var counter = 0;
+				var summ = 0;
+				for (var i = 0; i < Kf; i++ ) {
+					if ((arr[i]>=-5)&&(arr[i]<=5)){counter++; summ+=arr[i];}
+				}
+				arr[0] = summ;
+				arr[Kf-1] = counter;
+				document.write('<p align="center">количество:'+counter+' сумма:'+summ+'</p>'); 
+				document.write('<h3 align="center">Результат 1-ого массива:</h3>'); 
+				document.write('<table border = 2px cellpadding = 2px cellspacing =0px align="center"><tr align="center"><td>K</td>');
+				for (var i = 0; i < Kf; i++ ) {
+					document.write( '<td>' +(i+1)+ '</td>');
+				}
+				document.write('</tr>');
+				document.write('<tr align="center"><td>arr1</td>');
+				for (var i = 0; i < Kf; i++ ) {
+					document.write( '<td>' +arr[i]+ '</td>');
+				}
+				document.write('</tr>');
+				document.write('</table>');
+			}
+		</script>
+		<script>
+			var K = prompt('Введите число K от 6 до 15', '');
+			K = Number(K);
+			document.write('<h3 align="center">Количество ячеек в массиве: '+(K)+ '.</h3>'); 
+			document.write('<br /><hr>');
+			form_obr_vyvod1(K);
+			document.write('<br /><hr>');
+			form_obr_vyvod2(K);
+			document.write('<br /><hr>');
+			document.write('<a href="title.html"><h3 align="center">Назад</h3></a>');
+		</script>
+	</body>
+</html>

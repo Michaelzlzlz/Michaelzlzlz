@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ЛР №11 Проверка заполнения информации в форме.</title>
+		<meta charset="UTF-8">
+		<style>
+			input {
+ 				width: 150px;
+ 			 	background: #eaeaea;
+			}
+			
+			.block1 { 
+				width: 300px; 
+				height: 610px;
+				background: #CCCCCC;
+				margin: auto; 
+    			border: solid 1px black; 
+    			float: center;
+				}
+			
+			fieldset {
+  				margin-bottom: 15px;
+				padding: 10px;
+				border-radius: 20px;
+				}
+			
+			em {color: #ff0000;}
+			
+			label {
+  				width: 110px;
+  				display: inline-block;
+  				margin: 6px;
+			}
+			
+			input[type=radio] {width: 10px;}
+			
+			input[type=checkbox] {width: 10px;}
+			
+			input:required:invalid {border:1px solid red;}
+			
+			input[type=submit] {
+ 				width: 130px;
+ 				height: 50px;
+ 				background: #EEEEEE;
+	 			border-radius: 10px;
+			}
+	</style>
+	<script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">/*подкл.библ.*/</script>
+	<script>
+    	$(document).ready(function() {/*проверка совпадения паролей*/
+        	$('#подтвердить').change(function() {
+            	var pass1 = $("#пороль").val();
+            	var pass2 = $("#подтвердить").val();
+            	if (pass1 != pass2) {
+            	    $("#подтвердить").css('border', 'red 1px solid');
+                	$('#inform1').html('<em>Пароли не совпадают!!!</em>');
+            	}
+            	else { 
+            		$("#подтвердить").css('border', 'black 2px solid');
+                	$('#inform1').html('Пароли совпадают');}
+        	});
+    	});
+
+		function check1() {/*проверка формы и обновление страницы*/
+            var pol = document.querySelector('#пол').checked;
+            var sogl = document.querySelector('#согласие').checked;
+			if ((имя.validity.valueMissing == false) && (фам.validity.valueMissing == false) && (age.validity.valueMissing == false) && (email.validity.valueMissing == false)&&(тел.validity.valueMissing == false)&&(пороль.validity.valueMissing == false)&&(подтвердить.validity.valueMissing == false) &&(имя.validity.patternMismatch == false) && (фам.validity.patternMismatch == false) && (email.validity.patternMismatch == false)&&(тел.validity.patternMismatch == false)&&(пороль.validity.patternMismatch == false)&&(подтвердить.validity.patternMismatch == false)&&(pol)&&(sogl)) {document.write('<body bgcolor="#666666"><h3 align="center" style="color: #FFFFFF">Поздравляем! Вы зарегистрированы!!!</h3><a align="center" href="title.html"><h3>Назад</h3></a></body>');} else {$('#inform1').html('<em>Все поля должны быть заполнены и отмечены!</em>');}
+		}
+		
+	</script>
+	</head>
+	<body bgcolor="#666666">
+		<form onsubmit="return validate_form ( );">
+			<h2 align='center' style='color:#FFFFFF;'>Регистрация на клуб удивительных чаепитий</h2>
+			<fieldset class='block1'>
+				<p align='center'>Прошу заполнить все поля</p>
+				<label for="пол">Пол:<em>*</em></label><br>
+				<label><input type="radio" name='пол' id='пол' required>Мужской</label>
+				<label><input type="radio" name='пол' id='пол' required>Женский</label></br></br>
+				<label for="имя">Имя:<em>*</em></label>
+				<input id='имя' type="text" placeholder="Иван" autofocus required pattern="[a-z, A-Z, А-Я, а-я]{2,30}"
+				title="Введите буквы длиной не более 30 символов"> </br>
+				<label for="фам">Фамилия:<em>*</em></label>
+				<input id="фам" placeholder="Иванов" autofocus required pattern="[a-z, A-Z, А-Я, а-я]{2,30}" 
+				title="Введите буквы длиной не более 30 символов"></br>
+				<label for="age">Дата рождения:<em>*</em></label>
+				<input id="age" type="date" min="1920-01-01" max="2005-01-31" autofocus required><br>
+				<label for="email">Email:<em>*</em></label>
+				<input id="email" placeholder="ivan@mail.ru" autofocus required pattern="\S+@[a-z]+.[a-z]{2,3}"
+				title="Введите существующиtй email"><br>
+				<label for="тел">Телефон:<em>*</em></label>
+				<input id="тел" placeholder="+7(xxx)xxx-xx-xx" autofocus required pattern="[\+][7]{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
+				title="Введите в такой форме: +7(xxx)xxx-xx-xx учитывая символы '+', '(', ')', '-'"><br>
+				<label for="пороль">Пароль:<em>*</em></label>
+				<input id="пороль" type="password" pattern="(?=.*\d)(?=.*[a-z, A-Z, А-Я, а-я]).{8,}" required title="Введите длиной не менее 8 символов, содержащие хотя бы 1 цифра и 1 буква"><br>
+				<label for="подтвердить">Подтверждение пароля:<em>*</em></label>
+				<input id="подтвердить" type="password" pattern="(?=.*\d)(?=.*[a-z, A-Z, А-Я, а-я]).{8,}" required><br>
+				<label for="страна">Страна:<em>*</em></label>
+      			<select id="Страна">
+      				<option value="Россия">Россия</option>
+        			<option value="Германия">Германия</option>
+        			<option value="Франция">Франция</option>
+        			<option value="США">США</option>
+      			</select><br>
+      			<label for="согласие"><input id="согласие" name="согласие" type="checkbox" required title="Вы обязаны согласиться!"><em>*</em>Я согласен c</label><a href="pr.html">условиями использования</a><br>
+			 	<a>я не робот! Проверка:</a><br>
+			 	<script>
+			 		var a = Math.round( (Math.random()) * 51+5);
+			 		var b= Math.round( (Math.random()) * 51+5);
+			 		var c = Number(a) + Number(b);
+			 		document.write('<input type="text" style="width: 80px;" value="'+a+'+'+b+'=" readonly>');
+			 		document.write('<input id="prov" type="text" name="test" pattern="'+c+'" onkeyup="check();" required title="Докажите, что вы не робот!"><br><br>');
+			 	</script>
+			 	<input id="but" type="submit" value="Отправить" onclick="check(); check1();" disabled>
+			 	<div id="inform1"></div>
+			</fieldset>
+		</form>
+
+		<script>
+			function check() {/*проверка против роботов*/
+				if ($('#prov').val() == c) 
+				$('#but').removeAttr('disabled');
+				else
+				$('#but').attr('disabled','disable');
+			}
+		</script>
+
+		<script >
+			document.write('<a href="title.html"><h3 align="center">Назад</h3></a>');
+		</script>
+	</body>
+</html>

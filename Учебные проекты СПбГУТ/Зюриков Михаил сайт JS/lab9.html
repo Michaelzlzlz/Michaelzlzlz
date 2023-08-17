@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ЛР №9 Работа с CANVAS. Графика и элементы анимации.</title>
+        <meta charset="UTF-8">
+	</head>
+	
+	<body >
+		<canvas width='470' height='300' id='mypicture' style="background: #f4f4f4;">Обновите браузер</canvas> 
+		<script>
+				
+			   	var drawingCanvas = document.getElementById('mypicture');
+			   	if(drawingCanvas && drawingCanvas.getContext) {
+			   		var context = drawingCanvas.getContext('2d');
+     				/*небо*/ 
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#000080";
+     				context.beginPath();
+     				context.fillRect(0,0,470,300);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+
+
+     				/*поле*/
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#006600";
+     				context.beginPath();
+     				context.fillRect(0,250,470,300);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+                    context.font = "18px Verdana";
+                    context.fillStyle = "yellow";
+                    context.fillText("Спокойной ночи!", 40, 30);
+     				/*дом*/
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#a65217";
+     				context.beginPath();
+    				context.fillRect(50,150,170,100);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+     				/*окно*/
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#553516";
+     				context.beginPath();
+     				context.fillRect(84,174,43,53);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+     				/*дверь*/
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#654321";
+     				context.beginPath();
+     				context.fillRect(150,174,43,76);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+     				/*стекла*/
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#ffff00";
+     				context.beginPath();
+     				context.fillRect(85,201,20,25);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#ffff00";
+     				context.beginPath();
+     				context.fillRect(106,201,20,25);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#ffff00";
+     				context.beginPath();
+     				context.fillRect(85,175,20,25);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#ffff00";
+     				context.beginPath();
+     				context.fillRect(106,175,20,25);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+
+    				/*крыша*/
+     				context.beginPath();
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#cd853f";
+     				context.moveTo(50, 150);
+     				context.lineTo(135, 95);
+     				context.lineTo(220, 150);
+     				context.lineTo(50, 150);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+
+     				/*забор*/
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#cccc00";
+     				context.beginPath();
+     				context.fillRect(220,210,92,5);
+     				context.fillRect(220,170,3,80);
+     				context.fillRect(224,170,10,80);
+     				context.fillRect(235,170,10,80);
+     				context.fillRect(246,170,10,80);
+     				context.fillRect(257,170,10,80);
+     				context.fillRect(268,170,10,80);
+     				context.fillRect(279,170,10,80);
+     				context.fillRect(290,170,10,80);
+     				context.fillRect(301,170,10,80);
+     				context.fillRect(312,170,10,80);
+     				context.closePath();
+     				context.stroke();
+     				context.fill();
+
+    				/*звезды*/
+     				context.beginPath();
+     				context.strokeStyle = "#000000";
+     				context.fillStyle = "#FFFF00";
+     				context.moveTo(18,3);
+     				context.lineTo(12,15);
+     				context.lineTo(0,18); 
+     				context.lineTo(12,21);
+     				context.lineTo(5,31);  
+     				context.lineTo(16,25);
+     				context.lineTo(19,37);
+     				context.lineTo(22,25);
+     				context.lineTo(33,31);
+     				context.lineTo(26,21);
+     				context.lineTo(38,18);
+     				context.lineTo(22,15);
+     				context.closePath();
+     				context.fill();
+
+					context.beginPath();
+    				context.strokeStyle = "#000000";
+    				context.fillStyle = "#FFFF00";
+    				context.moveTo(14+150,3+40-5);
+    				context.lineTo(12+150,15+40);
+    				context.lineTo(150,18+40); 
+   				    context.lineTo(12+150,21+40);
+    				context.lineTo(5+150,31+40);  
+   				    context.lineTo(16+150,25+40);
+    				context.lineTo(19+150,37+40);
+   				    context.lineTo(22+150,25+40);
+    				context.lineTo(33+150,31+40);
+    				context.lineTo(26+150,21+40);
+    				context.lineTo(38+150,18+40);
+    				context.lineTo(22+150,15+40);
+    				context.closePath();
+    				context.fill();
+
+    				context.beginPath();
+    				context.strokeStyle = "#000000";
+    				context.fillStyle = "#FFFF00";
+    				context.moveTo(18+250,3+55);
+    				context.lineTo(12+1+250,15+55);
+    				context.lineTo(250-3,18+55); 
+    				context.lineTo(12+3+250,21+55-1);
+    				context.lineTo(5+250,31+55);  
+    				context.lineTo(16+250,25+55);
+    				context.lineTo(19+250,37+55);
+    				context.lineTo(22+250,25+55);
+    				context.lineTo(33+250,31+55);
+    				context.lineTo(26+250,21+55);
+    				context.lineTo(38+250,18+55);
+    				context.lineTo(22+250,15+55);
+    				context.closePath();
+    				context.fill();
+
+    				context.beginPath();
+   					context.strokeStyle = "#000000";
+    				context.fillStyle = "#FFFF00";
+    				context.moveTo(18+400,3+150);
+   					context.lineTo(12+400,15-2+150);
+    				context.lineTo(400,18+150); 
+    				context.lineTo(12+400,21+150);
+    				context.lineTo(5+400,31+150);  
+    				context.lineTo(16-1+400,25+150);
+    				context.lineTo(19+3+400,37-1+150);
+    				context.lineTo(22+400,25+150);
+    				context.lineTo(33+2+400,31+1+150);
+    				context.lineTo(26+400,21+2+150);
+    				context.lineTo(38-1+400,18+150);
+    				context.lineTo(22+400,15-1+150);
+    				context.closePath();
+    				context.fill();
+
+    				context.beginPath();
+	    			context.strokeStyle = "#000000";
+	    			context.fillStyle = "#FFFF00";
+    				context.moveTo(18+40,1+50);     
+    				context.lineTo(12+3+40,15+50);
+    				context.lineTo(40-2,18+50); 
+    				context.lineTo(12+40,21+2+50);
+    				context.lineTo(5+1+40,31+50);  
+    				context.lineTo(16+40,25+50);
+    				context.lineTo(19+40,37+50);
+    				context.lineTo(22+40,25+50);
+    				context.lineTo(33+40,31+2+50);
+    				context.lineTo(26+40,21+50);
+    				context.lineTo(38+3+40,18+1+50);
+   					context.lineTo(22+40,15+50);
+    				context.closePath();
+    				context.fill();
+
+    				function zvezda(y) {
+    					/*небо*/ 
+     					context.strokeStyle = "#000000";
+     					context.fillStyle = "#000080";
+    	 				context.beginPath();
+     					context.fillRect(230,0,50,300);
+     					context.closePath();
+     					context.stroke();
+     					context.fill();
+
+
+    	 				/*поле*/
+     					context.strokeStyle = "#000000";
+     					context.fillStyle = "#006600";
+     					context.beginPath();
+     					context.fillRect(230,250,50,300);
+	     				context.closePath();
+    	 				context.stroke();
+     					context.fill();
+
+     					/*звезда*/
+     					context.beginPath();
+    					context.strokeStyle = "#000000";
+    					context.fillStyle = "#FFFF00";
+    					context.moveTo(18+250,3+55);
+    					context.lineTo(12+1+250,15+55);
+    					context.lineTo(250-3,18+55); 
+	    				context.lineTo(12+3+250,21+55-1);
+	    				context.lineTo(5+250,31+55);  
+    					context.lineTo(16+250,25+55);
+    					context.lineTo(19+250,37+55);
+    					context.lineTo(22+250,25+55);
+    					context.lineTo(33+250,31+55);
+    					context.lineTo(26+250,21+55);
+    					context.lineTo(38+250,18+55);
+    					context.lineTo(22+250,15+55);
+    					context.closePath();
+    					context.fill();
+
+    	 				/*забор*/
+     					context.strokeStyle = "#000000";
+     					context.fillStyle = "#cccc00";
+     					context.beginPath();
+	     				context.fillRect(220,210,92,5);
+    	 				context.fillRect(220,170,3,80);
+     					context.fillRect(224,170,10,80);
+     					context.fillRect(235,170,10,80);
+     					context.fillRect(246,170,10,80);
+	     				context.fillRect(257,170,10,80);
+    	 				context.fillRect(268,170,10,80);
+     					context.fillRect(279,170,10,80);
+     					context.fillRect(290,170,10,80);
+     					context.fillRect(301,170,10,80);
+	     				context.fillRect(312,170,10,80);
+    	 				context.closePath();
+     					context.stroke();
+     					context.fill();
+    					context.beginPath();
+     					context.strokeStyle = "#000000";
+     					context.fillStyle = "#FFFF00";
+     					context.moveTo(18+230,3-50+y);
+    	 				context.lineTo(12+230,15-50+y);
+	     				context.lineTo(230,18-50+y); 
+     					context.lineTo(12+230,21-50+y);
+     					context.lineTo(5+230,31-50+y);  
+     					context.lineTo(16+230,25-50+y);
+     					context.lineTo(19+230,37-50+y);
+     					context.lineTo(22+230,25-50+y);
+     					context.lineTo(33+230,31-50+y);
+     					context.lineTo(26+230,21-50+y);
+     					context.lineTo(38+230,18-50+y);
+     					context.lineTo(22+230,15-50+y);
+     					context.closePath();
+     					context.fill();
+     					y = y + 2;
+    						if (y > 300) {y=0; return 0;}
+						setTimeout('zvezda(' + y +')', 7);
+     				}
+    				/*луна*/
+    				context.strokeStyle = "#000000";
+    				context.fillStyle = "#B3E5FC";
+    				context.beginPath();
+    				context.arc(390,60,32,0,Math.PI*2,true);
+  					context.closePath();
+   					context.fill();	
+    			}
+    		
+
+		</script>
+		<input type="button" value="Нажмите здесь для анимации" onClick="zvezda(1);">
+		<script>document.write('<a href="title.html"><h3 align="center">Назад</h3></a>');</script>
+	</body>
+</html>

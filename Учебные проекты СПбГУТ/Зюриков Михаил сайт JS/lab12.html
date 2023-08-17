@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="block">
+	<head>
+	
+		<title>ЛР №12 Обработка событий.</title>
+		<meta charset="UTF-8">
+	<style type="text/css">
+		
+		.block {font-size: 16px; height: 100%}
+	</style>
+	</head>
+	
+	<body onclick="color1()">
+		
+		<h2>Задание 1: Координат курсора</h2>
+		<p>Координаты курсора:</p><div id="elem">0 : 0</div>  
+		<h2>Задание 2: Бегущая строка</h2>
+		<h4 align='center'>1-ый способ:</h4>
+		<marquee behavior="scroll" direction="left">Осторожно, двери закрываются! Следующая станция улица Дыбенко! В целях нераспространения коронавирусной инфекции пассажиры обязаны носить маски и перчатки! Attention, the doors are closing! The next station is Dybenko street! In order to prevent the spread of coronavirus infection, passengers are required to wear masks and gloves! </marquee>
+		<h4 align='center'>2-ой способ:</h4>
+		<p align='center' id="marqueeline">Осторожно, двери закрываются! Следующая станция улица Дыбенко! </p><br>
+
+		<h4 align='center'>3-ий способ:</h4>
+		<style>
+		.buttons{
+			width: 150px;
+			border: solid 3px silver; 
+			font-color:blue;
+			font-size:16px;
+			border: solid 3px silver; 
+			font-color:blue;
+			font-size:16px;}
+
+			input[type=button]{
+			width: 15 0px; 
+			height:30px; 
+			border-radius: 8px;
+		}
+		.marqu1 {
+			width: 450px;
+			margin: 0 auto;
+			white-space: nowrap;
+			overflow: hidden;
+			box-sizing: border-box;
+		}
+
+		.marqu1 span {
+			display: inline-block;
+			padding-left: 100%;
+			animation: marquee 15s linear infinite;
+		}
+
+		@keyframes marquee {
+			0% { transform: translate(0, 0); }
+			100% { transform: translate(-100%, 0); }
+		}
+		</style>
+
+		<div class="marqu1">
+			<span>Осторожно, двери закрываются! Следующая станция улица Дыбенко!</span><br>
+		</div>
+
+		<script>
+			var elem = document.getElementById('elem');
+				document.addEventListener('mousemove', function(event) {
+				elem.innerHTML = event.clientX + ' : ' + event.clientY;
+				});
+		</script>
+		
+		<script>
+			function animate(id) {
+  				var node = document.getElementById(id).childNodes[0];
+  				var text = node.data;
+  				setInterval(function () {
+   						text = text.substring(1) + text[0];
+   						node.data = text;
+  				}, 80);
+ 			}
+ 			 window.addEventListener('load', function (e) { animate('marqueeline'); }, false);
+		</script>
+		<script>
+			function mouse_click(param)
+			{
+				let content = param.innerHTML;
+				word_counter=0;
+				for(var i=0;i<content.length;i++)
+					{if (content[i]==" ") word_counter++;
+				if((content[i]=="b") && (content[i]=="r"))word_counter++;}
+				alert("В этом aбзаце "+word_counter+" слов.");
+			}
+		</script>
+		<h2>Задание 3: подсчет количества слов в абзаце по клику на нем</h2>
+		<p onclick="mouse_click(this);">Чай – продукт универсальный. Его пьют, чтобы проснуться, взбодриться, расслабиться, перевести дух, сосредоточиться. Пьют дома, в гостях, на работе, в кафе.</p>
+		<p onclick="mouse_click(this);"> Лучше всего пить чёрный или зелёный чай. Другие виды чая, такие как ройбуш, имбирный или мятный чай, на самом деле не являются настоящим чаем, потому что эти напитки не содержат чайных листьев. Кроме того, в них нет кофеина. Чёрный и зелёный чай содержат кофеин.</p>
+		<script>
+			function bigimg(param)
+			{
+				param.style.height = "40%";
+				param.style.width = "35%";
+			}
+			function norimg(param)
+			{
+				param.style.height = "28%";
+				param.style.width = "25%";
+			}
+		</script>
+		<h2>Задание 4: изменение размера изображения при наведении на него курсора</h2>
+		<img src="photo/bonch.jpeg" height="28%" width = "25%" onmouseover="bigimg(this);" onmouseout="norimg(this)"></div>
+		
+		<h2>Задание 5: привести свои 4 примеры (показать свои получение навыки)</h2>
+		<h4>1.подсчет кликов</h4>
+		<input type="button" name="mybutton" id = "mybutton" value="Нажми на меня" class="buttons" onclick="countclick()">
+		<h4>2.смена цвета фона после клика</h4>
+		<script>
+			var c=0;
+			function countclick(){ c++;
+				document.getElementById( "mybutton" ).value  = c;
+			}
+			function color1(){ 
+				let c1='lightblue';
+				let c2='pink';
+				let c3='yellow';
+				let elem=document.body.style.background;
+				if((document.body.style.background=="")||(document.body.style.background==c3)) document.body.style.background=c1; else 
+					if(document.body.style.background==c1)
+						document.body.style.background=c2;else 
+					if(document.body.style.background==c2)
+						document.body.style.background=c3;
+				else 
+					if(document.body.style.background==c3)
+						document.body.style.background=c1;
+			}
+		</script>
+		<h4>3.смена цвета текста при наведения на него</h4>
+		<script>
+			function mousin(param){
+				param.style.color='red';
+			}
+			function mouseout(param){
+				param.style.color='blue';
+			}
+		</script>
+		<p style="color:blue; font-size: 18px;" onmouseover="mousin(this);" onmouseout="mouseout(this);">Наведи на меня!!!</p>
+		<h4>4.смена изображение при нажатии на него</h4>
+		<img src="photo/cat1.jpg" height="320" width = "420" onclick="smenimg(this);"></div>
+		<script>
+				var countimg=0;
+				var img1="photo/cat1.jpg";
+				var img2="photo/cat2.jfif";
+				var img3="photo/cat3.jpg";
+				var img4="photo/cat4.jpg";
+				var img5="photo/cat5.jpg";
+			function smenimg(param){
+				countimg++;
+				if(countimg==1) param.src=img2; else 
+				if(countimg==2) param.src=img3; else
+				if(countimg==3) param.src=img4; else
+				if(countimg==4) param.src=img5; else
+				if(countimg==5) {param.src=img1; countimg=0;}
+			}
+		</script>
+		<script>
+			document.write('<a href="title.html"><h3 align="center">Назад</h3></a>');
+		</script>
+		<br>
+		<br>
+	</body>
+</html>

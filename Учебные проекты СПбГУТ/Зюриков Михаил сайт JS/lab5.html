@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ЛР №5 Работа с объектом Date.</title>
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			function clTime(){
+ 				var data5 = new Date();
+				var time = [data5.getHours(),data5.getMinutes(),data5.getSeconds()];
+				if(time[0] < 10){time[0] = '0'+ time[0];}
+				if(time[1] < 10){time[1] = '0'+ time[1];}
+				if(time[2] < 10){time[2] = '0'+ time[2];}
+
+				var time1 = [time[0],time[1],time[2]].join(':');
+  				document.getElementById('clock').innerHTML = '<p align="right">' + time1 + '</p>';
+				}	
+			setInterval(clTime, 1000);
+			clTime();
+		</script>
+
+		<div class="clockpage">
+    		<span id="clock"></span>
+    	</div>
+
+		<script type="text/javascript">
+			let data0 = prompt('Введите дату: ГГГГ.ММ.ДД', '');
+			var dat = data0.split(".");
+			year1 = dat[0];
+			month1 = dat[1]-1;
+			day1 = dat[2];
+			let log;
+			var data1 = new Date(year1, month1, day1);
+			document.write('<p> Первое что вы ввели:</p> <p> Год: ' + year1 + '</p> <p>Месяц: ' +(month1+1)+ '</p> <p>День: '+day1+'</p>');
+			if ((data1.getFullYear() == year1) && (data1.getMonth() == month1) && (data1.getDate() == day1)) {
+				document.write('<p> 1. Дата корректна </p>');
+			log = Number(1);
+			} 
+			else {
+				document.write('<p> 1. Дата некорректна </p>');
+				log = Number(0);
+			}
+			
+			data2 = new Date();
+			if (log == 1) {
+				var Mresult=new Array('Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря');
+				let Dresult = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+				let res1;
+				if (data1.toDateString()<data2.toDateString()){
+					res1 = Number(0);
+				}
+
+				if (data1.toDateString()==data2.toDateString()){
+					res1 = Number(1);
+				}
+
+				if (data1.toDateString()>data2.toDateString()){
+					res1 = Number(2);
+				}
+
+				if (res1 == 0){
+					document.write('<p> Расшифровка: ' + day1 + ' '+ Mresult[month1] + ' ' + year1 + ' года была ' + Dresult[data1.getDay()] + '.</p>');
+					}
+
+				if (res1 == 1){
+					document.write('<p> Расшифровка: ' + day1 + ' '+ Mresult[month1] + ' ' + year1 + ' года - сегодня ' + Dresult[data1.getDay()] + '.</p>');
+				}
+					
+				if (res1 == 2){
+					document.write('<p> Расшифровка: ' + day1 + ' '+ Mresult[month1] + ' ' + year1 + ' года будет ' + Dresult[data1.getDay()] + '.</p>');
+				}
+			}
+
+			let dataN = prompt('Введите старую дату: ГГГГ.ММ.ДД', '');
+
+			var dat3 = dataN.split(".");
+			year3 = dat3[0];
+			month3 = dat3[1]-1;
+			day3 = dat3[2];
+			var data3 = new Date(year3, month3, day3);
+			document.write('<p> Второе(Старая дата) что вы ввели:</p> <p> Год: ' + year3 + '</p> <p>Месяц: ' +(month3+1)+ '</p> <p>День: '+day3+'</p>');
+			let res2 = Math.floor((data2.getTime()-data3.getTime())/(1000*60*60*24));
+			document.write('<p> 2. Результат: '+ res2 +' дней от старой датой до текущей.</p>');
+
+			let dataD = prompt('Введите дату вашей ближайшей день рождения: ГГГГ.ММ.ДД', '');
+			var datd = dataD.split(".");
+			year4 = datd[0];
+			month4 = datd[1]-1;
+			day4 = datd[2];
+			var data4 = new Date(year4, month4, day4);
+			document.write('<p> Третье(Ближайший ДР) что вы ввели:</p> <p> Год: ' + year4 + '</p> <p>Месяц: ' +(month4+1)+ '</p> <p>День: '+day4+'</p>');
+			let res2d = Math.floor((data4.getTime()-data2.getTime())/(1000*60*60*24));
+			document.write('<h3> Осталось... '+ Math.abs(res2d) +' дней от текущей даты до вашей ближайшей ДР!!!</h3>');
+
+			document.write('<h3> 3. ВНИМАНИЕ: Цифровые часы в правый верхний угол экрана.</h3>');
+			document.write('<a href="title.html"><h3>Назад</h3></a>');
+		</script>
+	</body>
+</html>
+
+

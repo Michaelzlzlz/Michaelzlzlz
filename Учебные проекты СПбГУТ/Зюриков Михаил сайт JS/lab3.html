@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ЛР №3 Изучение оператора for</title>
+	<meta charset="UTF-8">
+	</head>
+	
+	<body>
+		<script>
+		var a = 1.1;
+		function fun(x){
+			F = Math.exp(x+(a**(1.7)))
+			return F; 
+		}
+		var xN = 1;
+		var xK = 2;
+		var N = 10;
+		var rasn = (xK-xN)/N;
+		document.write('<table border = 1px cellpadding = 1px align="center"><tr align="center"><td>Номер</td><td>x</td><td>F(x)</td></tr>'); 
+		var j = 1;
+		for (var i=xN;i<=xK;i=i+rasn){
+
+			document.write('<tr><td align="center">'+j+'</td><td>'+ i +'</td><td>'+ fun(i)+ '</td></tr>'); 
+			j++;
+		}
+		document.write('</table>'); 
+		document.write('<a align="center" href="title.html"><h3>Назад</h3></a>');
+		</script>
+	</body>
+</html>

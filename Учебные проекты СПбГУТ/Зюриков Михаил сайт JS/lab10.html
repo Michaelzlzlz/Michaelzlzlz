@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ЛР №10 Обработка события click.</title>
+		<meta charset="UTF-8">
+		<style>
+			.FormTabl {
+				height: 60px;
+				width: 90px;
+				font-size: 30px;
+				border-radius: 17px;
+				background: #BBBBBB;
+			}
+			
+			.vyvod {
+				height: 80px; 
+				width: 360px; 
+				font-size: 45px;
+				text-align: right;
+				padding-right: 8px;
+				border-radius: 23px;
+				background: #CCCCCC;
+			}
+		</style>
+	</head>
+	
+	<body bgcolor="#666666">
+		<script>
+			var numR,
+			s_y,
+			isNotCal = false/*проверяет выполнен ли расчет или нет*/
+			function f_inp(x) {
+				s_y = document.getElementById("okno");
+				if(isNotCal == true) {/*если расчет выполнен, то автоматически чистим окно*/
+					s_y.value = "";
+				}
+				s_y.value = s_y.value + x; /*добавить новый символ справа*/
+				isNotCal = false; 
+			}
+ 
+			function f_cl() {/*функция очистки окна*/
+				s_y = document.getElementById("okno");
+				s_y.value = "";
+ 
+			}
+ 
+			function f_res() {;
+				isNotCal = true;
+				s_y.value = s_y.value.replace(/÷/g, '/');
+				s_y.value = s_y.value.replace(/×/g, '*'); /*заменить все символы умножения на символы операции*/
+				numR = eval(s_y.value);/*вычисление с помощью функции eval();*/
+				s_y.value = numR;
+				s_y = document.getElementById("okno");
+			}
+		</script>
+
+		<table border="0" align="center" bgColor="#888888"> <!--таблица-->
+			<tr>
+				<td colspan="4" style="text-align: center; padding: 4px 0;">
+					<input type="text" id="okno" class="vyvod"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="f_inp(1)" class="FormTabl"></td>
+				<td><input type="button" value="2" onclick="f_inp(2)" class="FormTabl"></td>
+				<td><input type="button" value="3" onclick="f_inp(3)" class="FormTabl"></td>
+				<td><input type="button" value="+" onclick="f_inp('+')" class="FormTabl"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="f_inp(4)" class="FormTabl"></td>
+				<td><input type="button" value="5" onclick="f_inp(5)" class="FormTabl"></td>
+				<td><input type="button" value="6" onclick="f_inp(6)" class="FormTabl"></td>
+				<td><input type="button" value="-" onclick="f_inp('-')" class="FormTabl"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="f_inp(7)" class="FormTabl"></td>
+				<td><input type="button" value="8" onclick="f_inp(8)" class="FormTabl"></td>
+				<td><input type="button" value="9" onclick="f_inp(9)" class="FormTabl"></td>
+				<td><input type="button" value="×" onclick="f_inp('×')" class="FormTabl"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="0" onclick="f_inp(0)" class="FormTabl"></td>
+				<td><input type="button" value="(" onclick="f_inp('(')" class="FormTabl"></td>
+				<td><input type="button" value=")" onclick="f_inp(')')" class="FormTabl"></td>
+				<td><input type="button" value="÷" onclick="f_inp('÷')" class="FormTabl"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="C" onclick="f_cl()" class="FormTabl"></td>
+				<td><input type="button" value="." onclick="f_inp('.')" class="FormTabl"></td>
+				<td><input type="button" value="%" onclick="f_inp('%')" class="FormTabl"></td>
+				<td><input type="button" value="=" onclick="f_res()" class="FormTabl"></td>
+			</tr>
+		</table>
+		<br />
+		<a href="title.html"><h3 align="center">Назад</h3></a>
+	</body>
+</html>
