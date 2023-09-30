@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'), url('shrift/Roboto.woff2') format('woff2'), url('shrift/Roboto.woff') format('woff'), url('shrift/Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.black_figure{
+	z-index: 2;
+	position: fixed;
+	width: 100% ;
+	height: 110px;
+	left: 0px;
+	top: 0px;
+	background: #111111;
+}
+
+.crystal1{
+	position: absolute;
+	left: 1.5%;
+	top: 10%;
+	}
+
+.crystal2{
+	position: absolute;
+	left: 11%;
+	top: 30%;
+	}
+
+.crystal3{
+	position: absolute;
+	left: 31%;
+	top: 19%;
+	width: 80%;
+	}
+
+.crystal4{
+	position: absolute;
+	right: 5%;
+	top: 19%;
+
+	}
+.crystal5{
+	position: absolute;
+	right: 1%;
+	top: 30%;
+	background: #C4C4C4;
+  border-radius: 50%;
+  
+  height: 3.5em;
+  width: 3.5em;
+	}
+
+.spisok_li {
+    list-style-type: none; /* Убираем маркеры */
+    font-family: 'Roboto';
+	font-size: 38px;
+	line-height: 42px;
+	text-align: center;
+	color: #FFFFFF;
+	display: inline;
+	margin-right: 4%;
+   }
+
+@media screen and (min-width: 1351px) {
+  li.spisok_li {
+    font-size: 38px;
+    margin-right: 4%;
+  }
+  p.spisok_li {
+  	font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  li.spisok_li {
+    font-size: 28px;
+    margin-right: 1%;
+  }
+  p.spisok_li {
+  	font-size: 16px;
+  }
+  div.crystal4{
+  	right: 7%;
+  }
+  div.crystal3{
+  	left: 36%;
+  }
+  div.crystal2{
+  	left: 13%;
+  }
+}
+
+.spisok_ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.spisok_li2{
+  list-style-type: none; /* Убираем маркеры */
+  font-family: 'Roboto';
+	font-size: 18px;
+	color: #FFFFFF;
+	margin-right: 0%;
+}
+
+.ssylka {
+		color: #FFFFFF; /* Цвет обычной ссылки */ 
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+.ssylkaY {
+		color: #FFFF88; /* Цвет обычной ссылки */ 
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+   /*.ssylka:visited {
+    color: #EEEEEE; 
+   } */
+   .ssylka:hover {
+    color: #FFFF00; /* Цвет ссылки при наведении на нее курсора мыши */ 
+   }
+
+.transition {
+  transition: 1s;
+}
+
+

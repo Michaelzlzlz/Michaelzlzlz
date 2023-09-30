@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>CRYSTAL | Регистрация</title>
+	<link href="style_main.css" rel="stylesheet">
+	<link href="style_registration.css" rel="stylesheet">
+	<link href="paint/logo.ico" type="image/x-icon">
+	</head>
+
+	<body>
+	
+	<div class="black_figure">
+		
+		<div class="crystal1">
+			<a href="new.html"><img src="paint/logo.svg" width="112" height="92.15" alt="CRYSTAL" /></a>
+		</div>
+		<div class="crystal2">
+			<a href="new.html"><img src="paint/logo2.svg" width="239" height="42" alt="CRYSTAL" /></a>
+		</div>
+		
+		<div class="crystal3">
+			<ul class="spisok_ul">
+   				<li class="spisok_li"><a class="ssylka transition" href="new.html">Новинки</a></li>
+   				<li class="spisok_li"><a class="ssylka transition" href="katal.html">Каталог</a></li>
+   				<li class="spisok_li"><a class="ssylka transition" href="kollect.html">Коллекция</a></li>
+   				<li class="spisok_li"><a class="ssylka transition" href="history.html">О нас</a></li>
+  			</ul>
+		</div>
+
+		<div class="crystal4">
+   				<p align="right" class="spisok_li2"><a class="ssylka transition" href="registration.html">Регистрация</a><br><a class="ssylka transition" href="avtorisation.html">Вход</a></p>
+		</div>
+		<div class="crystal5">
+		</div>
+	</div>
+	<div class="registr1">
+		<script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">/*подкл.библ.*/</script>
+		<script type="text/javascript" src="js_registration.js"></script>
+		<form onsubmit="return validate_form ( );">
+			<h2 class="styl1" align='center'>Регистрация в личный кабинет нашего магазина</h2>
+			<fieldset class='block1'>
+				<p align='center'>Прошу заполнить все поля</p>
+				<label for="пол">Пол:<em>*</em></label><br>
+				<label><input type="radio" name='пол' id='пол' required>Мужской</label>
+				<label><input type="radio" name='пол' id='пол' required>Женский</label></br></br>
+				<label for="имя">Имя:<em>*</em></label>
+				<input id='имя' type="text" placeholder="Иван" autofocus required pattern="[a-z, A-Z, А-Я, а-я]{2,30}"
+				title="Введите буквы длиной не более 30 символов"> </br>
+				<label for="фам">Фамилия:<em>*</em></label>
+				<input id="фам" placeholder="Иванов" autofocus required pattern="[a-z, A-Z, А-Я, а-я]{2,30}" 
+				title="Введите буквы длиной не более 30 символов"></br>
+				<label for="age">Дата рождения:<em>*</em></label>
+				<input id="age" type="date" min="1920-01-01" max="2005-01-31" autofocus required><br>
+				<label for="email">Email:<em>*</em></label>
+				<input id="email" placeholder="ivan@mail.ru" autofocus required pattern="\S+@[a-z]+.[a-z]{2,3}"
+				title="Введите существующиtй email"><br>
+				<label for="тел">Телефон:<em>*</em></label>
+				<input id="тел" placeholder="+7(xxx)xxx-xx-xx" autofocus required pattern="[\+][7]{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
+				title="Введите в такой форме: +7(xxx)xxx-xx-xx учитывая символы '+', '(', ')', '-'"><br>
+				<label for="пороль">Пароль:<em>*</em></label>
+				<input id="пороль" type="password" pattern="(?=.*\d)(?=.*[a-z, A-Z, А-Я, а-я]).{8,}" required title="Введите длиной не менее 8 символов, содержащие хотя бы 1 цифра и 1 буква"><br>
+				<label for="подтвердить">Подтверждение пароля:<em>*</em></label>
+				<input id="подтвердить" type="password" pattern="(?=.*\d)(?=.*[a-z, A-Z, А-Я, а-я]).{8,}" required><br>
+				<label for="страна">Страна:<em>*</em></label>
+      			<select id="Страна">
+      				<option value="Россия">Россия</option>
+        			<option value="Германия">Германия</option>
+        			<option value="Франция">Франция</option>
+        			<option value="США">США</option>
+      			</select><br>
+      			<label class="soglas" for="согласие"><input id="согласие" name="согласие" type="checkbox" required title="Вы обязаны согласиться!" ><em>*</em> Я согласен c <a href="pr.html">условиями использования</a></label><br>
+			 	<a>я не робот! Проверка:</a><br>
+
+			 	<script>
+			 		var a = Math.round( (Math.random()) * 51+5);
+			 		var b= Math.round( (Math.random()) * 51+5);
+			 		var c = Number(a) + Number(b);
+			 		document.write('<input type="text" style="width: 80px;" value="'+a+'+'+b+'=" readonly>');
+			 		document.write('<input id="prov" type="text" name="test" pattern="'+c+'" onkeyup="check();" required title="Докажите, что вы не робот!"><br><br>');
+			 	</script>
+
+			 	<input id="but" type="submit" value="Отправить" onclick="check(); check1();" disabled>
+			 	<div id="inform1"></div>
+			</fieldset>
+		</form>
+		
+		<script>
+			function check() {/*проверка против роботов*/
+				if ($('#prov').val() == c) 
+				$('#but').removeAttr('disabled');
+				else
+				$('#but').attr('disabled','disable');
+			}
+		</script>
+
+
+	</div>
+	</body>
+</html>

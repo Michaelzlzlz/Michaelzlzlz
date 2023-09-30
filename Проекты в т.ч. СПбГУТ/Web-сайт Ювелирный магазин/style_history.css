@@ -1,0 +1,120 @@
+.history1{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 110px;
+	background: #FEFEFE;
+}
+
+.zag1{
+	position: relative;
+	font-family: Roboto;
+	font-size: 48px;
+	color: #000000;
+}
+
+.zag2{
+	position: relative;
+	width: 500px;
+	height: 56px;
+	left: 1%;
+	bottom: 450px;
+	font-family: Roboto;
+	font-size: 40px;
+	color: #000000;
+}
+
+.ic1{
+	width: 100px;
+	position: relative;
+	left: 1%;
+	bottom: 400px;
+}
+
+.pic1{display: inline;
+	position: relative;
+	left: 25%;
+	top: 0px;
+}
+
+.zag3{
+	position: relative;
+	font-family: Roboto;
+	width: 400px;
+	left: 1%;
+	bottom: 430px;
+	font-size: 44px;
+	color: #000000;
+}
+
+.zag4{
+	width: 500px;
+	position: relative;
+	height: 56px;
+	top: -470px;
+	left: 1%;
+	font-family: Roboto;
+	font-size: 34px;
+	line-height: 40px;
+	color: #000000;
+}
+
+.zag5{
+	width: 800px;
+	position: relative;
+	height: 56px;
+	left: 2%;
+	font-family: Roboto;
+	font-size: 28px;
+	color: #000000;
+	text-indent: 40px;
+}
+
+.zag6{
+	width: 700px;
+	left: 40%;
+	top: 700px;
+	position: absolute;
+	font-family: Roboto;
+	font-size: 28px;
+	color: #000000;
+	text-indent: 40px;
+}
+
+.pic2{
+	position: relative;
+	display: inline;
+	right:  10%;
+	font-family: Roboto;
+	font-size: 20px;
+}
+
+.pic3{
+	position: relative;
+	top: 480px;
+	left:  1%;
+	font-family: Roboto;
+	font-size: 20px;
+}
+
+.pic4{
+	top: 1250px;
+	position: absolute;
+	display: inline;
+	right:  10%;
+	font-family: Roboto;
+	font-size: 20px;
+}
+
+.zag7{
+	width: 800px;
+	left: 3%;
+	top: 1200px;
+	position: absolute;
+	font-family: Roboto;
+	font-size: 28px;
+	color: #000000;
+	text-indent: 40px;
+}

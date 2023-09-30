@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>CRYSTAL | Авторизация</title>
+	<link href="style_main.css" rel="stylesheet">
+	<link href="style_registration.css" rel="stylesheet">
+	<link href="style_avtorisation.css" rel="stylesheet">
+	<link href="paint/logo.ico" type="image/x-icon">
+	</head>
+
+	<body>
+	
+	<div class="black_figure">
+		
+		<div class="crystal1">
+			<a href="new.html"><img src="paint/logo.svg" width="112" height="92.15" alt="CRYSTAL" /></a>
+		</div>
+		<div class="crystal2">
+			<a href="new.html"><img src="paint/logo2.svg" width="239" height="42" alt="CRYSTAL" /></a>
+		</div>
+		
+		<div class="crystal3">
+			<ul class="spisok_ul">
+   				<li class="spisok_li"><a class="ssylka transition" href="new.html">Новинки</a></li>
+   				<li class="spisok_li"><a class="ssylka transition" href="katal.html">Каталог</a></li>
+   				<li class="spisok_li"><a class="ssylka transition" href="kollect.html">Коллекция</a></li>
+   				<li class="spisok_li"><a class="ssylka transition" href="history.html">О нас</a></li>
+  			</ul>
+		</div>
+
+		<div class="crystal4">
+   				<p align="right" class="spisok_li2"><a class="ssylka transition" href="registration.html">Регистрация</a><br><a class="ssylka transition" href="avtorisation.html">Вход</a></p>
+		</div>
+		<div class="crystal5">
+		</div>
+	</div>
+
+	<div class="registr1">
+		<script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">/*подкл.библ.*/</script>
+		<script type="text/javascript" src="js_registration.js"></script>
+		<form onsubmit="return validate_form ( );">
+			<h2 class="styl1" align='center'>Вход в личный кабинет нашего магазина</h2>
+			<fieldset class='block2'>
+				<label for="email">Email:<em>*</em></label>
+				<input id="email" placeholder="ivan@mail.ru" autofocus required pattern="\S+@[a-z]+.[a-z]{2,3}"
+				title="Введите существующиtй email"><br>
+		
+				<label for="пороль">Пароль:<em>*</em></label>
+				<input id="пороль" type="password" pattern="(?=.*\d)(?=.*[a-z, A-Z, А-Я, а-я]).{8,}" required title="Введите длиной не менее 8 символов, содержащие хотя бы 1 цифра и 1 буква"><br>
+			 	<a href="#">Забыли пароль?</a><br><br>
+			 	<a>я не робот! Проверка:</a><br>
+			 	<script>
+			 		var a = Math.round( (Math.random()) * 51+5);
+			 		var b= Math.round( (Math.random()) * 51+5);
+			 		var c = Number(a) + Number(b);
+			 		document.write('<input type="text" style="width: 80px;" value="'+a+'+'+b+'=" readonly>');
+			 		document.write('<input id="prov" type="text" name="test" pattern="'+c+'" onkeyup="check();" required title="Докажите, что вы не робот!"><br><br>');
+			 	</script>
+
+			 	<input id="but" type="submit" value="Войти" onclick="check2();" disabled>
+			 	<div id="inform1"></div>
+			</fieldset>
+		</form>
+		
+		<script>
+			function check() {/*проверка против роботов*/
+				if ($('#prov').val() == c) 
+				$('#but').removeAttr('disabled');
+				else
+				$('#but').attr('disabled','disable');
+			}
+		</script>
+
+
+	</div>
+	</body>
+</html>

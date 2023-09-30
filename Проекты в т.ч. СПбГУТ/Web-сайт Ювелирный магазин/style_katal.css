@@ -1,0 +1,222 @@
+.katal1{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 110px;
+	background: #FEFEFE;
+}
+
+.text1{
+	position: absolute;
+	left: 30px;
+	top: -50px;
+	font-family: 'Roboto';
+	font-size: 64px;
+	color: #333355;
+}
+
+@media screen and (min-width: 1351px) {
+  p.text1 {
+  	top: -50px;
+    font-size: 64px;
+  }
+}  
+@media screen and (max-width: 1350px) {
+  p.text1 {
+  	top: -5px;
+    font-size: 40px;
+  }
+}
+
+.forma1{
+	display: inline;
+	position: absolute;
+	left: 25%;
+	top: 40px;
+	background: #F5F5F5;
+	height: 40px;
+  width: 620px;
+  border: 0px solid #E8E8E8;
+	border-radius: 25px;
+}
+
+#input1{
+	left: 6px;
+	top: 10%;
+	  position: relative;
+    font-size: 18px;
+    height: 30px;
+    width: 608px;
+    background: #F5F5F5;
+	border-radius: 25px;
+	border: 0px solid #E8E8E8;
+}
+
+.forma2{
+	list-style-type: none;
+	display: inline;
+	position: absolute;
+	left: 20px;
+	top: 100px;
+	background: #FAFAFA;
+	height: 730px;
+  	width: 280px;
+  	border: 1px solid #AAA;
+	border-radius: 25px;
+	box-shadow: -1px 5px 10px rgba(0,0,0,0.5);
+}
+.forma2 p{
+	top: 10px;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	left: 20px;
+	font-family: 'Roboto';
+	font-size: 20px;
+	color: #333;
+}
+
+.forma2 li{
+	list-style-type: none;
+	font-family: 'Roboto';
+	font-size: 16px;
+	color: #333;
+}
+
+.price2{
+	top: 30px;
+	left: 0px;
+	height: 30px;
+  	width: 120px;
+	display: inline;
+	position: relative;
+}
+
+.price2 p{
+	display: inline;
+	left: 30px;
+	top: -22px;
+	font-family: 'Roboto';
+	font-size: 18px;
+	color: #333355;	
+}
+.price2 input{
+	top: 30px;
+	font-family: 'Roboto';
+	font-size: 16px;
+	border-radius: 6px;
+	border: 0.5px solid #AAA;
+	color: #333355;	
+}
+
+.but1{
+	top: 10px;
+	padding: 8px 90px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center
+	font-family: 'Roboto';
+	font-size: 30px;
+	color: #FFFFFF;	
+	border-radius: 20px;
+	background-color: #222222;
+	border: 0.5px solid #666666;
+}
+
+#katalog{
+	position: absolute;
+	left: 350px;
+	top: 100px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 2vw;
+}
+
+.newkatal{
+	position: absolute;
+	left: 10px;
+	top: 540px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 2vw;
+}
+
+.katal2{
+	border-radius: 14px;
+	background: #F8F8F8;
+    text-align: center;
+    height: 400px;
+    width: 350px;
+    border: 1.5px solid #CaCaCa;
+}
+
+.katal2 a{text-decoration: none;}
+
+.im_tovar{
+	/*border: 0.5px solid #CCC;*/
+	position: relative;
+	top: 2.5%;
+	/*настройки ширины и длины - в html*/
+}
+
+.katal2 button{
+	cursor: pointer; 
+	top: 110px;
+	padding: 8px 45px;
+	position: relative;
+	left: 25%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 20px;
+	color: #FFFFFF;	
+	border-radius: 10px;
+	background-color: #222222;
+	border: 0.5px solid #666666;
+
+}
+
+.firstP {
+	text-overflow: ellipsis;
+	width: 95%; 
+	white-space: nowrap;
+	overflow:hidden;
+	position: relative;
+	top: -60px;
+	text-align: left;
+	left: 2.5%;
+	color: #000000;
+	font-family: 'Roboto';
+	font-size: 27px;
+}
+
+.secondP {
+	text-overflow: ellipsis;
+	width: 95%; 
+	white-space: nowrap;
+	overflow:hidden;
+	position: relative;
+	top: -88px;
+	text-align: left;
+	left: 3%;
+	color: grey;
+	font-family: 'Roboto';
+	font-size: 25px;
+}
+
+.PriceP {
+	text-overflow: ellipsis;
+	width: 50%; 
+	white-space: nowrap;
+	overflow:hidden;
+	position: relative;
+	top: -120px;
+	text-align: left;
+	left: 5%;
+	color: #FF0064;
+	font-family: 'Roboto';
+	font-size: 32px;
+}
